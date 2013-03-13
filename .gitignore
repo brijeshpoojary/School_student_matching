@@ -1,10 +1,41 @@
-config.php
-admin/config.php
+*.py[cod]
 
-!index.html
+# C extensions
+*.so
 
-download
-image/cache/*.jpg
-image/cache/data/*
-system/cache
-system/logs
+# Packages
+*.egg
+*.egg-info
+dist
+build
+eggs
+parts
+bin
+var
+sdist
+develop-eggs
+.installed.cfg
+lib64
+config
+logs
+yui
+web
+*.ini
+*~
+*.tar
+
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+.coverage
+.tox
+nosetests.xml
+
+# Translations
+*.mo
+
+# Mr Developer
+.mr.developer.cfg
+.project
+.pydevproject
