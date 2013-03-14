@@ -39,11 +39,11 @@ class index:
 
 class topframe:
 	def GET(SELF):
-		district_query = db2.query('select distinct cast(b3.id as text),b3.name from vw_institution s, vw_boundary b1, vw_boundary b2,vw_boundary b3 where s.boundary_id = b1.id and b1.parent_id=b2.id and b2.parent_id=b3.id and b3.parent_id=1 and b3.boundary_type_id=1')
+		district_query = db2.query('select distinct cast(b3.id as text),b3.name from vw_institution s, vw_boundary b1, vw_boundary b2,vw_boundary b3 where s.boundary_id = b1.id and b1.parent_id=b2.id and b2.parent_id=b3.id and b3.parent_id=1 and b3.boundary_type_id=1 order by b3.name')
 	
-		block_query = db2.query('select distinct cast(b2.id as text),b2.name,b2.parent_id from vw_institution s, vw_boundary b1, vw_boundary b2,vw_boundary b3 where s.boundary_id = b1.id and b1.parent_id=b2.id and b2.parent_id=b3.id and b3.parent_id=1 and b3.boundary_type_id=1')
+		block_query = db2.query('select distinct cast(b2.id as text),b2.name,b2.parent_id from vw_institution s, vw_boundary b1, vw_boundary b2,vw_boundary b3 where s.boundary_id = b1.id and b1.parent_id=b2.id and b2.parent_id=b3.id and b3.parent_id=1 and b3.boundary_type_id=1 order by b2.name')
 
-		cluster_query = db2.query('select distinct cast(b1.id as text),b1.name,b1.parent_id from vw_institution s, vw_boundary b1, vw_boundary b2,vw_boundary b3 where s.boundary_id = b1.id and b1.parent_id=b2.id and b2.parent_id=b3.id and b3.parent_id=1 and b3.boundary_type_id=1')
+		cluster_query = db2.query('select distinct cast(b1.id as text),b1.name,b1.parent_id from vw_institution s, vw_boundary b1, vw_boundary b2,vw_boundary b3 where s.boundary_id = b1.id and b1.parent_id=b2.id and b2.parent_id=b3.id and b3.parent_id=1 and b3.boundary_type_id=1 order by b1.name')
 		fp=csv.reader(open('/home/brijesh/school_student_matching/school_matching/data/sikshanaschools.csv','r'),delimiter='|')
 		fp.next()
 		district=[]
@@ -64,7 +64,7 @@ class topframe:
 
 class content:
 	def GET(SELF,dbid,csvid):
-		dschools=db2.query('select cast(s.id as text) as school_code,s.name as school_name from vw_institution s, vw_boundary b1, vw_boundary b2,vw_boundary b3 where s.boundary_id = b1.id and b1.parent_id=b2.id and b2.parent_id=b3.id and b3.boundary_type_id=1 and b3.boundary_category_id=9 and s.id not in (select distinct klp_id from school_match_found) and cast(b1.id as text)=''$name'' order by s.name',{"name":dbid})
+		dschools=db2.query('select cast(s.id as text) as school_code,s.name as school_name from vw_institution s, vw_boundary b1, vw_boundary b2,vw_boundary b3 where s.boundary_id = b1.id and s.active=2 and b1.parent_id=b2.id and b2.parent_id=b3.id and b3.boundary_type_id=1 and b3.boundary_category_id=9 and s.id not in (select distinct klp_id from school_match_found) and cast(b1.id as text)=''$name'' order by s.name',{"name":dbid})
 		fp=csv.reader(open('/home/brijesh/school_student_matching/school_matching/data/sikshanaschools.csv','r'),delimiter='|')
 		fp.next()
 		school_ids=db2.query('select distinct cast(school_code as text) from school_match_found')

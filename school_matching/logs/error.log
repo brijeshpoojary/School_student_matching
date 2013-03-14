@@ -56,3 +56,33 @@
 [Tue Mar 12 17:14:26 2013] [info] [client 106.51.143.87] mod_wsgi (pid=20304, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/school_matching/match.wsgi'.
 [Wed Mar 13 11:01:33 2013] [info] [client 106.51.160.128] mod_wsgi (pid=20305, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/school_matching/match.wsgi'., referer: http://dev.klp.org.in:8029/topframe
 [Wed Mar 13 11:01:51 2013] [info] [client 106.51.160.128] mod_wsgi (pid=30627, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/school_matching/match.wsgi'.
+[Wed Mar 13 14:39:40 2013] [info] [client 122.167.126.34] mod_wsgi (pid=30628, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/school_matching/match.wsgi'.
+[Wed Mar 13 14:40:12 2013] [info] [client 122.167.126.34] mod_wsgi (pid=30627, process='', application=''): Reloading WSGI script '/home/brijesh/school_student_matching/school_matching/match.wsgi'., referer: http://dev.klp.org.in:8029/topframe
+[Wed Mar 13 15:40:03 2013] [info] [client 106.51.160.128] mod_wsgi (pid=20958, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/school_matching/match.wsgi'.
+[Wed Mar 13 15:40:14 2013] [error] [client 106.51.160.128] Traceback (most recent call last):, referer: http://dev.klp.org.in:8029/topframe
+[Wed Mar 13 15:40:14 2013] [error] [client 106.51.160.128]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 239, in process, referer: http://dev.klp.org.in:8029/topframe
+[Wed Mar 13 15:40:14 2013] [error] [client 106.51.160.128]     return self.handle(), referer: http://dev.klp.org.in:8029/topframe
+[Wed Mar 13 15:40:14 2013] [error] [client 106.51.160.128]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 230, in handle, referer: http://dev.klp.org.in:8029/topframe
+[Wed Mar 13 15:40:14 2013] [error] [client 106.51.160.128]     return self._delegate(fn, self.fvars, args), referer: http://dev.klp.org.in:8029/topframe
+[Wed Mar 13 15:40:14 2013] [error] [client 106.51.160.128]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 420, in _delegate, referer: http://dev.klp.org.in:8029/topframe
+[Wed Mar 13 15:40:14 2013] [error] [client 106.51.160.128]     return handle_class(cls), referer: http://dev.klp.org.in:8029/topframe
+[Wed Mar 13 15:40:14 2013] [error] [client 106.51.160.128]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 396, in handle_class, referer: http://dev.klp.org.in:8029/topframe
+[Wed Mar 13 15:40:14 2013] [error] [client 106.51.160.128]     return tocall(*args), referer: http://dev.klp.org.in:8029/topframe
+[Wed Mar 13 15:40:14 2013] [error] [client 106.51.160.128]   File "/home/brijesh/school_student_matching/school_matching/match.wsgi", line 67, in GET, referer: http://dev.klp.org.in:8029/topframe
+[Wed Mar 13 15:40:14 2013] [error] [client 106.51.160.128]     dschools=db2.query('select cast(s.id as text) as school_code,s.name as school_name from vw_institution s, vw_boundary b1, vw_boundary b2,vw_boundary b3 where s.boundary_id = b1.id and and s.active=2 and b1.parent_id=b2.id and b2.parent_id=b3.id and b3.boundary_type_id=1 and b3.boundary_category_id=9 and s.id not in (select distinct klp_id from school_match_found) and cast(b1.id as text)=''$name'' order by s.name',{"name":dbid}), referer: http://dev.klp.org.in:8029/topframe
+[Wed Mar 13 15:40:14 2013] [error] [client 106.51.160.128]   File "/usr/lib/python2.7/dist-packages/web/db.py", line 644, in query, referer: http://dev.klp.org.in:8029/topframe
+[Wed Mar 13 15:40:14 2013] [error] [client 106.51.160.128]     self._db_execute(db_cursor, sql_query), referer: http://dev.klp.org.in:8029/topframe
+[Wed Mar 13 15:40:14 2013] [error] [client 106.51.160.128]   File "/usr/lib/python2.7/dist-packages/web/db.py", line 587, in _db_execute, referer: http://dev.klp.org.in:8029/topframe
+[Wed Mar 13 15:40:14 2013] [error] [client 106.51.160.128]     out = cur.execute(query, params), referer: http://dev.klp.org.in:8029/topframe
+[Wed Mar 13 15:40:14 2013] [error] [client 106.51.160.128] ProgrammingError: syntax error at or near "and", referer: http://dev.klp.org.in:8029/topframe
+[Wed Mar 13 15:40:14 2013] [error] [client 106.51.160.128] LINE 1: ...b2,vw_boundary b3 where s.boundary_id = b1.id and and s.acti..., referer: http://dev.klp.org.in:8029/topframe
+[Wed Mar 13 15:40:14 2013] [error] [client 106.51.160.128]                                                              ^, referer: http://dev.klp.org.in:8029/topframe
+[Wed Mar 13 15:40:14 2013] [error] [client 106.51.160.128] , referer: http://dev.klp.org.in:8029/topframe
+[Wed Mar 13 15:40:14 2013] [error] [client 106.51.160.128] , referer: http://dev.klp.org.in:8029/topframe
+[Wed Mar 13 15:41:05 2013] [info] [client 106.51.160.128] mod_wsgi (pid=21789, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/school_matching/match.wsgi'.
+[Wed Mar 13 15:42:25 2013] [info] [client 106.51.160.128] mod_wsgi (pid=21790, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/school_matching/match.wsgi'., referer: http://dev.klp.org.in:8029/topframe
+[Wed Mar 13 15:45:09 2013] [info] [client 106.51.160.128] mod_wsgi (pid=21789, process='', application=''): Reloading WSGI script '/home/brijesh/school_student_matching/school_matching/match.wsgi'., referer: http://dev.klp.org.in:8029/topframe
+[Wed Mar 13 15:46:06 2013] [info] [client 106.51.160.128] mod_wsgi (pid=21790, process='', application=''): Reloading WSGI script '/home/brijesh/school_student_matching/school_matching/match.wsgi'., referer: http://dev.klp.org.in:8029/topframe
+[Wed Mar 13 15:47:54 2013] [info] [client 106.51.160.128] mod_wsgi (pid=23040, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/school_matching/match.wsgi'.
+[Wed Mar 13 15:51:03 2013] [info] [client 122.167.126.34] mod_wsgi (pid=23040, process='', application=''): Reloading WSGI script '/home/brijesh/school_student_matching/school_matching/match.wsgi'.
+[Wed Mar 13 15:53:48 2013] [info] [client 122.167.126.34] mod_wsgi (pid=23039, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/school_matching/match.wsgi'., referer: http://dev.klp.org.in:8029/topframe
