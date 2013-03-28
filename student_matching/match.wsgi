@@ -15,6 +15,7 @@ os.chdir(abspath)
 
 render = web.template.render('templates/')
 
+<<<<<<< HEAD
 db1=web.database(dbn='postgres',user='klp',password='chang3d1t',db='semis')
 db2=web.database(dbn='postgres',user='klp',password='chang3d1t',db='sikshana')
 
@@ -27,6 +28,18 @@ urls = (
 
 values={"dist":""}
 queryvalues={"klpcode":"","klpname":"","studentcode":"","studentname":"","district":"","block":"","cluster":""}
+=======
+db1=web.database(dbn='postgres',user='klp',pw='hello',db='semis')
+db2=web.database(dbn='postgres',user='klp',pw='azsxdcfv',db='sikshana')
+
+urls = (
+	'/', 'index',
+	'/go','result'
+)
+
+values={"dist":""}
+queryvalues={"klpcode":"","klpname":"","schoolcode":"","schoolname":"","district":"","block":"","cluster":""}
+>>>>>>> 9efe44e78bbd31c8f1ca67d77f3ea0bf77c758d9
 
 
 class prints:
@@ -35,6 +48,7 @@ class prints:
 
 class index:
 	def GET(SELF):
+<<<<<<< HEAD
 		return render.main()
 
 class topframe:
@@ -103,6 +117,26 @@ class content:
 			schools=[row for row in fp if row[2].strip().upper() == cluster_name.strip().upper() and row[3].strip() not in school_ids]
 			klp_schools = db2.query('select cast(s.id as text) as school_code,s.name as school_name,b3.name as district,b2.name as block,b1.name as cluster from schools_institution s, schools_boundary b1, schools_boundary b2,schools_boundary b3 where s.boundary_id = b1.id and b1.parent_id=b2.id and b2.parent_id=b3.id and b3.boundary_type_id=1 and b3.boundary_category_id=9 and s.id not in (select distinct klp_id from school_match_found) and cast(b1.id as text)=''$dist'' order by s.name,b2.name',values)	
 			return render.compare(district_query,values,schools,klp_schools,block_query,cluster_query)"""
+=======
+			#dists,blcks,clsts,schls=[],[],[],[]
+			fp=csv.reader(open('/home/brijesh/school_student_matching/student_matching/sikshanaschools.csv','r'),delimiter='|')
+			fp.next()
+			district_query = db1.query('select distinct cast(b3.id as text),b3.name from schools_institution s, schools_boundary b1, schools_boundary b2,schools_boundary b3 where s.boundary_id = b1.id and b1.parent_id=b2.id and b2.parent_id=b3.id and b3.parent_id=1 and b3.boundary_type_id=1')
+			district=[]
+			district_name=''
+			school_ids=db2.query('select distinct cast(school_code as text) from school_match_found')
+			school_ids=[row.school_code for row in school_ids]
+			
+			for row in district_query:
+				district.append([row.id,row.name])
+			for row in district:
+				if row[0]==values['dist']:
+					district_name=row[1]
+			
+			schools=[row for row in fp if row[0].strip().upper() == district_name.strip().upper() and row[3].strip() not in school_ids]
+			klp_schools = db2.query('select cast(s.id as text) as school_code,s.name as school_name,b3.name as district,b2.name as block,b1.name as cluster from vw_institution s, vw_boundary b1, vw_boundary b2,vw_boundary b3 where s.boundary_id = b1.id and b1.parent_id=b2.id and b2.parent_id=b3.id and b3.boundary_type_id=1 and s.id not in (select distinct klp_id from school_match_found) and cast(b3.id as text)=''$dist'' order by s.name',values)	
+			return render.compare(district,values,schools,klp_schools)
+>>>>>>> 9efe44e78bbd31c8f1ca67d77f3ea0bf77c758d9
 				
 
 application = web.application(urls,globals()).wsgifunc()
@@ -112,6 +146,7 @@ class result:
     def POST(self):
 	inputs=web.input()
 	global values
+<<<<<<< HEAD
 	if str(inputs.db_value)!='' and str(inputs.csv_value)!='':
 		queryvalues["klpcode"]=str(inputs.db_value).split("|")[0]
 		queryvalues["klpname"]=str(inputs.db_value).split("|")[1]
@@ -121,3 +156,17 @@ class result:
 		db2.query('insert into student_match_found values($studentcode,$studentname,$klpcode,$klpname)',queryvalues)
 	
         raise web.seeother('/content/'+str(inputs.box).split("|")[0]+'/'+str(inputs.box).split("|")[1]+'/'+str(inputs.box).split("|")[2])
+=======
+	if str(inputs.sslc)!='' and str(inputs.semis)!='':
+		queryvalues["klpcode"]=str(inputs.sslc).split("|")[3]
+		queryvalues["klpname"]=str(inputs.sslc).split("|")[4]
+		queryvalues["schoolcode"]=str(inputs.semis).split("|")[3]
+		queryvalues["schoolname"]=str(inputs.semis).split("|")[4]
+		queryvalues["district"]=str(inputs.semis).split("|")[0]
+		queryvalues["block"]=str(inputs.semis).split("|")[1]
+		queryvalues["cluster"]=str(inputs.semis).split("|")[2]
+		db1.query('insert into school_match_found values($klpcode,$klpname,$schoolcode,$schoolname,$district,$block,$cluster)',queryvalues)
+		db2.query('insert into school_match_found values($klpcode,$klpname,$schoolcode,$schoolname)',queryvalues)
+	values["dist"]=str(inputs.dist)
+        raise web.seeother('/')
+>>>>>>> 9efe44e78bbd31c8f1ca67d77f3ea0bf77c758d9

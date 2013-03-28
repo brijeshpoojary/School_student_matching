@@ -86,6 +86,7 @@
 [Wed Mar 13 15:47:54 2013] [info] [client 106.51.160.128] mod_wsgi (pid=23040, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/school_matching/match.wsgi'.
 [Wed Mar 13 15:51:03 2013] [info] [client 122.167.126.34] mod_wsgi (pid=23040, process='', application=''): Reloading WSGI script '/home/brijesh/school_student_matching/school_matching/match.wsgi'.
 [Wed Mar 13 15:53:48 2013] [info] [client 122.167.126.34] mod_wsgi (pid=23039, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/school_matching/match.wsgi'., referer: http://dev.klp.org.in:8029/topframe
+<<<<<<< HEAD
 [Mon Mar 18 12:45:51 2013] [info] [client 127.0.0.1] mod_wsgi (pid=2676, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/school_matching/match.wsgi'.
 [Mon Mar 18 12:45:53 2013] [error] [client 127.0.0.1] Traceback (most recent call last):, referer: http://0.0.0.0:8026/
 [Mon Mar 18 12:45:53 2013] [error] [client 127.0.0.1]   File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 239, in process, referer: http://0.0.0.0:8026/
@@ -114,3 +115,5 @@
 [Mon Mar 18 12:45:53 2013] [error] [client 127.0.0.1] , referer: http://0.0.0.0:8026/
 [Mon Mar 18 12:45:53 2013] [error] [client 127.0.0.1] , referer: http://0.0.0.0:8026/
 [Mon Mar 18 12:45:53 2013] [info] [client 127.0.0.1] mod_wsgi (pid=2677, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/school_matching/match.wsgi'.
+=======
+>>>>>>> 9efe44e78bbd31c8f1ca67d77f3ea0bf77c758d9

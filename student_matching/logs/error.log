@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [Tue Mar 19 16:40:24 2013] [info] [client 106.51.146.20] mod_wsgi (pid=13373, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/student_matching/match.wsgi'., referer: http://dev.klp.org.in:8028/topframe
 [Tue Mar 19 16:40:24 2013] [error] [client 106.51.146.20] Traceback (most recent call last):, referer: http://dev.klp.org.in:8028/topframe
 [Tue Mar 19 16:40:24 2013] [error] [client 106.51.146.20]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 239, in process, referer: http://dev.klp.org.in:8028/topframe
@@ -939,3 +940,285 @@ i[Tue Mar 19 17:01:35 2013] [error] [client 106.51.146.20]   File "/usr/lib/pyth
 [Tue Mar 26 12:21:01 2013] [info] [client 106.51.151.252] mod_wsgi (pid=14521, process='', application=''): Reloading WSGI script '/home/brijesh/school_student_matching/student_matching/match.wsgi'., referer: http://dev.klp.org.in:8028/content/31757/7/102
 [Tue Mar 26 13:15:04 2013] [info] [client 106.51.151.252] mod_wsgi (pid=14521, process='', application=''): Reloading WSGI script '/home/brijesh/school_student_matching/student_matching/match.wsgi'., referer: http://dev.klp.org.in:8028/topframe
 [Wed Mar 27 11:28:59 2013] [info] [client 106.51.179.201] mod_wsgi (pid=14520, process='', application=''): Reloading WSGI script '/home/brijesh/school_student_matching/student_matching/match.wsgi'., referer: http://dev.klp.org.in:8028/topframe
+=======
+[Mon Mar 04 17:55:14 2013] [info] [client 106.51.138.7] mod_wsgi (pid=6541, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/match.wsgi'.
+
+[Mon Mar 04 17:57:20 2013] [info] [client 106.51.138.7] mod_wsgi (pid=7311, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/match.wsgi'.
+[Mon Mar 04 17:58:54 2013] [info] [client 106.51.138.7] mod_wsgi (pid=7531, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/match.wsgi'.
+[Mon Mar 04 18:07:57 2013] [info] [client 106.51.138.7] mod_wsgi (pid=9751, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/match.wsgi'.
+[Mon Mar 04 18:16:57 2013] [info] [client 106.51.138.7] mod_wsgi (pid=11928, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/match.wsgi'.
+[Mon Mar 04 18:19:10 2013] [info] [client 106.51.138.7] mod_wsgi (pid=12242, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/match.wsgi'.
+[Mon Mar 04 18:32:49 2013] [info] [client 106.51.138.7] mod_wsgi (pid=15232, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/match.wsgi'.
+[Mon Mar 04 18:32:50 2013] [error] [client 106.51.138.7] Traceback (most recent call last):
+[Mon Mar 04 18:32:50 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 239, in process
+[Mon Mar 04 18:32:50 2013] [error] [client 106.51.138.7]     return self.handle()
+[Mon Mar 04 18:32:50 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 230, in handle
+[Mon Mar 04 18:32:50 2013] [error] [client 106.51.138.7]     return self._delegate(fn, self.fvars, args)
+[Mon Mar 04 18:32:50 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 420, in _delegate
+[Mon Mar 04 18:32:50 2013] [error] [client 106.51.138.7]     return handle_class(cls)
+[Mon Mar 04 18:32:50 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 396, in handle_class
+[Mon Mar 04 18:32:50 2013] [error] [client 106.51.138.7]     return tocall(*args)
+[Mon Mar 04 18:32:50 2013] [error] [client 106.51.138.7]   File "/home/brijesh/school_student_matching/match.wsgi", line 48, in GET
+[Mon Mar 04 18:32:50 2013] [error] [client 106.51.138.7]     return render.compare(district,values,schools,klp_schools)
+[Mon Mar 04 18:32:50 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/template.py", line 881, in __call__
+[Mon Mar 04 18:32:50 2013] [error] [client 106.51.138.7]     return BaseTemplate.__call__(self, *a, **kw)
+[Mon Mar 04 18:32:50 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/template.py", line 808, in __call__
+[Mon Mar 04 18:32:50 2013] [error] [client 106.51.138.7]     return self.t(*a, **kw)
+[Mon Mar 04 18:32:50 2013] [error] [client 106.51.138.7]   File "templates/compare.html", line 18, in __template__
+[Mon Mar 04 18:32:50 2013] [error] [client 106.51.138.7]     </select>
+[Mon Mar 04 18:32:50 2013] [error] [client 106.51.138.7] IndexError: list index out of range
+[Mon Mar 04 18:32:50 2013] [error] [client 106.51.138.7] 
+[Mon Mar 04 18:34:36 2013] [info] [client 106.51.138.7] mod_wsgi (pid=15441, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/match.wsgi'.
+[Mon Mar 04 18:34:37 2013] [error] [client 106.51.138.7] Traceback (most recent call last):
+[Mon Mar 04 18:34:37 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 239, in process
+[Mon Mar 04 18:34:37 2013] [error] [client 106.51.138.7]     return self.handle()
+[Mon Mar 04 18:34:37 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 230, in handle
+[Mon Mar 04 18:34:37 2013] [error] [client 106.51.138.7]     return self._delegate(fn, self.fvars, args)
+[Mon Mar 04 18:34:37 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 420, in _delegate
+[Mon Mar 04 18:34:37 2013] [error] [client 106.51.138.7]     return handle_class(cls)
+[Mon Mar 04 18:34:37 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 396, in handle_class
+[Mon Mar 04 18:34:37 2013] [error] [client 106.51.138.7]     return tocall(*args)
+[Mon Mar 04 18:34:37 2013] [error] [client 106.51.138.7]   File "/home/brijesh/school_student_matching/match.wsgi", line 48, in GET
+[Mon Mar 04 18:34:37 2013] [error] [client 106.51.138.7]     return render.compare(district,values,schools,klp_schools)
+[Mon Mar 04 18:34:37 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/template.py", line 881, in __call__
+[Mon Mar 04 18:34:37 2013] [error] [client 106.51.138.7]     return BaseTemplate.__call__(self, *a, **kw)
+[Mon Mar 04 18:34:37 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/template.py", line 808, in __call__
+[Mon Mar 04 18:34:37 2013] [error] [client 106.51.138.7]     return self.t(*a, **kw)
+[Mon Mar 04 18:34:37 2013] [error] [client 106.51.138.7]   File "templates/compare.html", line 21, in __template__
+[Mon Mar 04 18:34:37 2013] [error] [client 106.51.138.7]     </left>
+[Mon Mar 04 18:34:37 2013] [error] [client 106.51.138.7] AttributeError: 'list' object has no attribute 'title'
+[Mon Mar 04 18:34:37 2013] [error] [client 106.51.138.7] 
+[Mon Mar 04 18:35:29 2013] [info] [client 106.51.138.7] mod_wsgi (pid=16029, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/match.wsgi'.
+[Mon Mar 04 18:37:09 2013] [info] [client 106.51.138.7] mod_wsgi (pid=16466, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/match.wsgi'.
+[Mon Mar 04 18:38:26 2013] [info] [client 106.51.138.7] mod_wsgi (pid=16665, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/match.wsgi'., referer: http://dev.klp.org.in:8029/
+[Mon Mar 04 18:39:27 2013] [info] [client 106.51.138.7] mod_wsgi (pid=16790, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/match.wsgi'.
+[Mon Mar 04 18:40:46 2013] [info] [client 106.51.138.7] mod_wsgi (pid=17647, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/match.wsgi'.
+[Mon Mar 04 18:41:29 2013] [info] [client 106.51.138.7] mod_wsgi (pid=17758, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/match.wsgi'.
+[Mon Mar 04 18:42:33 2013] [info] [client 106.51.138.7] mod_wsgi (pid=17880, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/match.wsgi'., referer: http://dev.klp.org.in:8029/
+[Mon Mar 04 18:45:31 2013] [info] [client 106.51.138.7] mod_wsgi (pid=18689, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/match.wsgi'.
+[Tue Mar 05 11:06:22 2013] [info] [client 106.51.138.7] mod_wsgi (pid=18688, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/match.wsgi'., referer: http://dev.klp.org.in:8029/
+[Tue Mar 05 11:16:55 2013] [info] [client 106.51.138.7] mod_wsgi (pid=30765, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/match.wsgi'.
+[Tue Mar 05 11:16:55 2013] [error] [client 106.51.138.7] Traceback (most recent call last):
+[Tue Mar 05 11:16:55 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 239, in process
+[Tue Mar 05 11:16:55 2013] [error] [client 106.51.138.7]     return self.handle()
+[Tue Mar 05 11:16:55 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 230, in handle
+[Tue Mar 05 11:16:55 2013] [error] [client 106.51.138.7]     return self._delegate(fn, self.fvars, args)
+[Tue Mar 05 11:16:55 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 420, in _delegate
+[Tue Mar 05 11:16:55 2013] [error] [client 106.51.138.7]     return handle_class(cls)
+[Tue Mar 05 11:16:55 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 396, in handle_class
+[Tue Mar 05 11:16:55 2013] [error] [client 106.51.138.7]     return tocall(*args)
+[Tue Mar 05 11:16:55 2013] [error] [client 106.51.138.7]   File "/home/brijesh/school_student_matching/match.wsgi", line 47, in GET
+[Tue Mar 05 11:16:55 2013] [error] [client 106.51.138.7]     schools=[row for row in district_query if row[0].strip().upper() == district.strip().upper() and row[3].strip() not in school_ids]
+[Tue Mar 05 11:16:55 2013] [error] [client 106.51.138.7] AttributeError: 'list' object has no attribute 'strip'
+[Tue Mar 05 11:16:55 2013] [error] [client 106.51.138.7] 
+[Tue Mar 05 11:18:13 2013] [info] [client 106.51.138.7] mod_wsgi (pid=31964, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/match.wsgi'.
+[Tue Mar 05 11:19:13 2013] [info] [client 106.51.138.7] mod_wsgi (pid=31965, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/match.wsgi'., referer: http://dev.klp.org.in:8029/
+[Tue Mar 05 11:21:37 2013] [info] [client 106.51.138.7] mod_wsgi (pid=31964, process='', application=''): Reloading WSGI script '/home/brijesh/school_student_matching/match.wsgi'.
+[Tue Mar 05 11:23:10 2013] [info] [client 106.51.138.7] mod_wsgi (pid=696, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/match.wsgi'.
+[Tue Mar 05 11:25:29 2013] [info] [client 106.51.138.7] mod_wsgi (pid=695, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/match.wsgi'., referer: http://dev.klp.org.in:8029/
+i[Tue Mar 05 11:39:42 2013] [info] [client 106.51.138.7] mod_wsgi (pid=4195, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/match.wsgi'.
+[Tue Mar 05 11:39:43 2013] [error] [client 106.51.138.7] Traceback (most recent call last):
+[Tue Mar 05 11:39:43 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 239, in process
+[Tue Mar 05 11:39:43 2013] [error] [client 106.51.138.7]     return self.handle()
+[Tue Mar 05 11:39:43 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 230, in handle
+[Tue Mar 05 11:39:43 2013] [error] [client 106.51.138.7]     return self._delegate(fn, self.fvars, args)
+[Tue Mar 05 11:39:43 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 420, in _delegate
+[Tue Mar 05 11:39:43 2013] [error] [client 106.51.138.7]     return handle_class(cls)
+[Tue Mar 05 11:39:43 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 396, in handle_class
+[Tue Mar 05 11:39:43 2013] [error] [client 106.51.138.7]     return tocall(*args)
+[Tue Mar 05 11:39:43 2013] [error] [client 106.51.138.7]   File "/home/brijesh/school_student_matching/match.wsgi", line 47, in GET
+[Tue Mar 05 11:39:43 2013] [error] [client 106.51.138.7]     schools=[row for row in fp if row[0].strip().upper() == value['dist'].strip().upper() and row[3].strip() not in school_ids]
+[Tue Mar 05 11:39:43 2013] [error] [client 106.51.138.7] NameError: global name 'value' is not defined
+[Tue Mar 05 11:39:43 2013] [error] [client 106.51.138.7] 
+[Tue Mar 05 11:40:36 2013] [info] [client 106.51.138.7] mod_wsgi (pid=4912, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/match.wsgi'.
+[Tue Mar 05 11:40:37 2013] [error] [client 106.51.138.7] Traceback (most recent call last):
+[Tue Mar 05 11:40:37 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 239, in process
+[Tue Mar 05 11:40:37 2013] [error] [client 106.51.138.7]     return self.handle()
+[Tue Mar 05 11:40:37 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 230, in handle
+[Tue Mar 05 11:40:37 2013] [error] [client 106.51.138.7]     return self._delegate(fn, self.fvars, args)
+[Tue Mar 05 11:40:37 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 420, in _delegate
+[Tue Mar 05 11:40:37 2013] [error] [client 106.51.138.7]     return handle_class(cls)
+[Tue Mar 05 11:40:37 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 396, in handle_class
+[Tue Mar 05 11:40:37 2013] [error] [client 106.51.138.7]     return tocall(*args)
+[Tue Mar 05 11:40:37 2013] [error] [client 106.51.138.7]   File "/home/brijesh/school_student_matching/match.wsgi", line 49, in GET
+[Tue Mar 05 11:40:37 2013] [error] [client 106.51.138.7]     return render.compare(district,values,schools,klp_schools)
+[Tue Mar 05 11:40:37 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/template.py", line 881, in __call__
+[Tue Mar 05 11:40:37 2013] [error] [client 106.51.138.7]     return BaseTemplate.__call__(self, *a, **kw)
+[Tue Mar 05 11:40:37 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/template.py", line 808, in __call__
+[Tue Mar 05 11:40:37 2013] [error] [client 106.51.138.7]     return self.t(*a, **kw)
+[Tue Mar 05 11:40:37 2013] [error] [client 106.51.138.7]   File "templates/compare.html", line 18, in __template__
+[Tue Mar 05 11:40:37 2013] [error] [client 106.51.138.7]     </select>
+[Tue Mar 05 11:40:37 2013] [error] [client 106.51.138.7] AttributeError: 'list' object has no attribute 'id'
+[Tue Mar 05 11:40:37 2013] [error] [client 106.51.138.7] 
+[Tue Mar 05 11:47:42 2013] [info] [client 106.51.138.7] mod_wsgi (pid=6405, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/match.wsgi'.
+[Tue Mar 05 11:47:43 2013] [error] [client 106.51.138.7] Traceback (most recent call last):
+[Tue Mar 05 11:47:43 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 239, in process
+[Tue Mar 05 11:47:43 2013] [error] [client 106.51.138.7]     return self.handle()
+[Tue Mar 05 11:47:43 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 230, in handle
+[Tue Mar 05 11:47:43 2013] [error] [client 106.51.138.7]     return self._delegate(fn, self.fvars, args)
+[Tue Mar 05 11:47:43 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 420, in _delegate
+[Tue Mar 05 11:47:43 2013] [error] [client 106.51.138.7]     return handle_class(cls)
+[Tue Mar 05 11:47:43 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 396, in handle_class
+[Tue Mar 05 11:47:43 2013] [error] [client 106.51.138.7]     return tocall(*args)
+[Tue Mar 05 11:47:43 2013] [error] [client 106.51.138.7]   File "/home/brijesh/school_student_matching/match.wsgi", line 49, in GET
+[Tue Mar 05 11:47:43 2013] [error] [client 106.51.138.7]     return render.compare(district,values,schools,klp_schools)
+[Tue Mar 05 11:47:43 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/template.py", line 881, in __call__
+[Tue Mar 05 11:47:43 2013] [error] [client 106.51.138.7]     return BaseTemplate.__call__(self, *a, **kw)
+[Tue Mar 05 11:47:43 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/template.py", line 808, in __call__
+[Tue Mar 05 11:47:43 2013] [error] [client 106.51.138.7]     return self.t(*a, **kw)
+[Tue Mar 05 11:47:43 2013] [error] [client 106.51.138.7]   File "templates/compare.html", line 18, in __template__
+[Tue Mar 05 11:47:43 2013] [error] [client 106.51.138.7]     </select>
+[Tue Mar 05 11:47:43 2013] [error] [client 106.51.138.7] AttributeError: 'list' object has no attribute 'id'
+[Tue Mar 05 11:47:43 2013] [error] [client 106.51.138.7] 
+[Tue Mar 05 11:54:26 2013] [info] [client 106.51.138.7] mod_wsgi (pid=7749, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/match.wsgi'.
+[Tue Mar 05 11:58:40 2013] [info] [client 106.51.138.7] mod_wsgi (pid=8794, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/match.wsgi'.
+[Tue Mar 05 12:00:48 2013] [info] [client 106.51.138.7] mod_wsgi (pid=9724, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/match.wsgi'.
+[Tue Mar 05 12:00:49 2013] [error] [client 106.51.138.7] Traceback (most recent call last):
+[Tue Mar 05 12:00:49 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 239, in process
+[Tue Mar 05 12:00:49 2013] [error] [client 106.51.138.7]     return self.handle()
+[Tue Mar 05 12:00:49 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 230, in handle
+[Tue Mar 05 12:00:49 2013] [error] [client 106.51.138.7]     return self._delegate(fn, self.fvars, args)
+[Tue Mar 05 12:00:49 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 420, in _delegate
+[Tue Mar 05 12:00:49 2013] [error] [client 106.51.138.7]     return handle_class(cls)
+[Tue Mar 05 12:00:49 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 396, in handle_class
+[Tue Mar 05 12:00:49 2013] [error] [client 106.51.138.7]     return tocall(*args)
+[Tue Mar 05 12:00:49 2013] [error] [client 106.51.138.7]   File "/home/brijesh/school_student_matching/match.wsgi", line 52, in GET
+[Tue Mar 05 12:00:49 2013] [error] [client 106.51.138.7]     klp_schools = db1.query('select cast(s.id as text) as school_code,s.name as school_name,b3.name as district,b2.name as block,b1.name as cluster from schools_institution s, schools_boundary b1, schools_boundary b2,schools_boundary b3 where s.boundary_id = b1.id and b1.parent_id=b2.id and b2.parent_id=b3.id  and s.id not in (select distinct klp_id from school_match_found) and b3.id=''$dist'' order by s.name',values)
+[Tue Mar 05 12:00:49 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/db.py", line 644, in query
+[Tue Mar 05 12:00:49 2013] [error] [client 106.51.138.7]     self._db_execute(db_cursor, sql_query)
+[Tue Mar 05 12:00:49 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/db.py", line 587, in _db_execute
+[Tue Mar 05 12:00:49 2013] [error] [client 106.51.138.7]     out = cur.execute(query, params)
+[Tue Mar 05 12:00:49 2013] [error] [client 106.51.138.7] DataError: invalid input syntax for type numeric: ""
+[Tue Mar 05 12:00:49 2013] [error] [client 106.51.138.7] LINE 1: ...istinct klp_id from school_match_found) and b3.id='' order b...
+[Tue Mar 05 12:00:49 2013] [error] [client 106.51.138.7]                                                              ^
+[Tue Mar 05 12:00:49 2013] [error] [client 106.51.138.7] 
+[Tue Mar 05 12:00:49 2013] [error] [client 106.51.138.7] 
+[Tue Mar 05 12:02:02 2013] [info] [client 106.51.138.7] mod_wsgi (pid=9906, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/match.wsgi'.
+[Tue Mar 05 13:52:56 2013] [info] [client 106.51.138.7] mod_wsgi (pid=2474, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/match.wsgi'.
+[Tue Mar 05 13:52:57 2013] [error] [client 106.51.138.7] Traceback (most recent call last):
+[Tue Mar 05 13:52:57 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 239, in process
+[Tue Mar 05 13:52:57 2013] [error] [client 106.51.138.7]     return self.handle()
+[Tue Mar 05 13:52:57 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 230, in handle
+[Tue Mar 05 13:52:57 2013] [error] [client 106.51.138.7]     return self._delegate(fn, self.fvars, args)
+[Tue Mar 05 13:52:57 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 420, in _delegate
+[Tue Mar 05 13:52:57 2013] [error] [client 106.51.138.7]     return handle_class(cls)
+[Tue Mar 05 13:52:57 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 396, in handle_class
+[Tue Mar 05 13:52:57 2013] [error] [client 106.51.138.7]     return tocall(*args)
+[Tue Mar 05 13:52:57 2013] [error] [client 106.51.138.7]   File "/home/brijesh/school_student_matching/match.wsgi", line 52, in GET
+[Tue Mar 05 13:52:57 2013] [error] [client 106.51.138.7]     klp_schools = db1.query('select cast(s.id as text) as school_code,s.name as school_name,b3.name as district,b2.name as block,b1.name as cluster from vw_institution s, vw_boundary b1, vw_boundary b2,vw_boundary b3 where s.boundary_id = b1.id and b1.parent_id=b2.id and b2.parent_id=b3.id  and s.id not in (select distinct klp_id from school_match_found) and cast(b3.id as text)=''$dist'' order by s.name',values)
+[Tue Mar 05 13:52:57 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/db.py", line 644, in query
+[Tue Mar 05 13:52:57 2013] [error] [client 106.51.138.7]     self._db_execute(db_cursor, sql_query)
+[Tue Mar 05 13:52:57 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/db.py", line 587, in _db_execute
+[Tue Mar 05 13:52:57 2013] [error] [client 106.51.138.7]     out = cur.execute(query, params)
+[Tue Mar 05 13:52:57 2013] [error] [client 106.51.138.7] ProgrammingError: relation "vw_institution" does not exist
+[Tue Mar 05 13:52:57 2013] [error] [client 106.51.138.7] LINE 1: ...district,b2.name as block,b1.name as cluster from vw_institu...
+[Tue Mar 05 13:52:57 2013] [error] [client 106.51.138.7]                                                              ^
+[Tue Mar 05 13:52:57 2013] [error] [client 106.51.138.7] 
+[Tue Mar 05 13:52:57 2013] [error] [client 106.51.138.7] 
+[Tue Mar 05 13:54:04 2013] [info] [client 106.51.138.7] mod_wsgi (pid=2603, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/match.wsgi'.
+[Tue Mar 05 14:08:49 2013] [info] [client 106.51.138.7] mod_wsgi (pid=5947, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/match.wsgi'., referer: http://dev.klp.org.in:8029/
+[Tue Mar 05 14:09:18 2013] [info] [client 106.51.138.7] mod_wsgi (pid=5948, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/match.wsgi'., referer: http://dev.klp.org.in:8029/
+[Tue Mar 05 14:10:21 2013] [info] [client 106.51.138.7] mod_wsgi (pid=6460, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/match.wsgi'.
+[Tue Mar 05 14:20:36 2013] [info] [client 106.51.138.7] mod_wsgi (pid=9469, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/match.wsgi'.
+[Tue Mar 05 14:20:36 2013] [error] [client 106.51.138.7] mod_wsgi (pid=9469, process='', application=''): Failed to parse WSGI script file '/home/brijesh/school_student_matching/match.wsgi'.
+[Tue Mar 05 14:20:36 2013] [error] [client 106.51.138.7] mod_wsgi (pid=9469): Exception occurred processing WSGI script '/home/brijesh/school_student_matching/match.wsgi'.
+[Tue Mar 05 14:20:36 2013] [error] [client 106.51.138.7]   File "/home/brijesh/school_student_matching/match.wsgi", line 52
+[Tue Mar 05 14:20:36 2013] [error] [client 106.51.138.7]     klp_schools = db2.query('select cast(s.id as text) as school_code,s.name as school_name,b3.name as district,b2.name as block,b1.name as cluster from vw_institution s, vw_boundary b1, vw_boundary b2,vw_boundary b3 where s.boundary_id = b1.id and b1.parent_id=b2.id and b2.parent_id=b3.id and boundary_type_id='1' and s.id not in (select distinct klp_id from school_match_found) and cast(b3.id as text)=''$dist'' order by s.name',values)
+[Tue Mar 05 14:20:36 2013] [error] [client 106.51.138.7]                                                                                                                                                                                                                                                                                                                          ^
+[Tue Mar 05 14:20:36 2013] [error] [client 106.51.138.7] SyntaxError: invalid syntax
+[Tue Mar 05 14:21:19 2013] [info] [client 106.51.138.7] mod_wsgi (pid=9734, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/match.wsgi'.
+[Tue Mar 05 14:21:20 2013] [error] [client 106.51.138.7] Traceback (most recent call last):
+[Tue Mar 05 14:21:20 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 239, in process
+[Tue Mar 05 14:21:20 2013] [error] [client 106.51.138.7]     return self.handle()
+[Tue Mar 05 14:21:20 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 230, in handle
+[Tue Mar 05 14:21:20 2013] [error] [client 106.51.138.7]     return self._delegate(fn, self.fvars, args)
+[Tue Mar 05 14:21:20 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 420, in _delegate
+[Tue Mar 05 14:21:20 2013] [error] [client 106.51.138.7]     return handle_class(cls)
+[Tue Mar 05 14:21:20 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 396, in handle_class
+[Tue Mar 05 14:21:20 2013] [error] [client 106.51.138.7]     return tocall(*args)
+[Tue Mar 05 14:21:20 2013] [error] [client 106.51.138.7]   File "/home/brijesh/school_student_matching/match.wsgi", line 52, in GET
+[Tue Mar 05 14:21:20 2013] [error] [client 106.51.138.7]     klp_schools = db2.query('select cast(s.id as text) as school_code,s.name as school_name,b3.name as district,b2.name as block,b1.name as cluster from vw_institution s, vw_boundary b1, vw_boundary b2,vw_boundary b3 where s.boundary_id = b1.id and b1.parent_id=b2.id and b2.parent_id=b3.id and boundary_type_id=1 and s.id not in (select distinct klp_id from school_match_found) and cast(b3.id as text)=''$dist'' order by s.name',values)
+[Tue Mar 05 14:21:20 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/db.py", line 644, in query
+[Tue Mar 05 14:21:20 2013] [error] [client 106.51.138.7]     self._db_execute(db_cursor, sql_query)
+[Tue Mar 05 14:21:20 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/db.py", line 587, in _db_execute
+[Tue Mar 05 14:21:20 2013] [error] [client 106.51.138.7]     out = cur.execute(query, params)
+[Tue Mar 05 14:21:20 2013] [error] [client 106.51.138.7] ProgrammingError: column "boundary_type_id" does not exist
+[Tue Mar 05 14:21:20 2013] [error] [client 106.51.138.7] LINE 1: ...and b1.parent_id=b2.id and b2.parent_id=b3.id and boundary_t...
+[Tue Mar 05 14:21:20 2013] [error] [client 106.51.138.7]                                                              ^
+[Tue Mar 05 14:21:20 2013] [error] [client 106.51.138.7] 
+[Tue Mar 05 14:21:20 2013] [error] [client 106.51.138.7] 
+[Tue Mar 05 14:34:39 2013] [info] [client 106.51.138.7] mod_wsgi (pid=12285, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/match.wsgi'.
+[Tue Mar 05 14:34:40 2013] [error] [client 106.51.138.7] Traceback (most recent call last):
+[Tue Mar 05 14:34:40 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 239, in process
+[Tue Mar 05 14:34:40 2013] [error] [client 106.51.138.7]     return self.handle()
+[Tue Mar 05 14:34:40 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 230, in handle
+[Tue Mar 05 14:34:40 2013] [error] [client 106.51.138.7]     return self._delegate(fn, self.fvars, args)
+[Tue Mar 05 14:34:40 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 420, in _delegate
+[Tue Mar 05 14:34:40 2013] [error] [client 106.51.138.7]     return handle_class(cls)
+[Tue Mar 05 14:34:40 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 396, in handle_class
+[Tue Mar 05 14:34:40 2013] [error] [client 106.51.138.7]     return tocall(*args)
+[Tue Mar 05 14:34:40 2013] [error] [client 106.51.138.7]   File "/home/brijesh/school_student_matching/match.wsgi", line 52, in GET
+[Tue Mar 05 14:34:40 2013] [error] [client 106.51.138.7]     klp_schools = db2.query('select cast(s.id as text) as school_code,s.name as school_name,b3.name as district,b2.name as block,b1.name as cluster from vw_institution s, vw_boundary b1, vw_boundary b2,vw_boundary b3 where s.boundary_id = b1.id and b1.parent_id=b2.id and b2.parent_id=b3.id and boundary_type_id=1 and s.id not in (select distinct klp_id from school_match_found) and cast(b3.id as text)=''$dist'' order by s.name',values)
+[Tue Mar 05 14:34:40 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/db.py", line 644, in query
+[Tue Mar 05 14:34:40 2013] [error] [client 106.51.138.7]     self._db_execute(db_cursor, sql_query)
+[Tue Mar 05 14:34:40 2013] [error] [client 106.51.138.7]   File "/usr/lib/python2.7/dist-packages/web/db.py", line 587, in _db_execute
+[Tue Mar 05 14:34:40 2013] [error] [client 106.51.138.7]     out = cur.execute(query, params)
+[Tue Mar 05 14:34:40 2013] [error] [client 106.51.138.7] ProgrammingError: column reference "boundary_type_id" is ambiguous
+[Tue Mar 05 14:34:40 2013] [error] [client 106.51.138.7] LINE 1: ...and b1.parent_id=b2.id and b2.parent_id=b3.id and boundary_t...
+[Tue Mar 05 14:34:40 2013] [error] [client 106.51.138.7]                                                              ^
+[Tue Mar 05 14:34:40 2013] [error] [client 106.51.138.7] 
+[Tue Mar 05 14:34:40 2013] [error] [client 106.51.138.7] 
+[Tue Mar 05 14:40:11 2013] [info] [client 106.51.138.7] mod_wsgi (pid=13481, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/match.wsgi'.
+[Tue Mar 05 14:40:38 2013] [info] [client 106.51.138.7] mod_wsgi (pid=13482, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/match.wsgi'., referer: http://dev.klp.org.in:8029/
+[Tue Mar 05 14:43:00 2013] [info] [client 106.51.138.7] mod_wsgi (pid=14415, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/match.wsgi'.
+[Tue Mar 05 14:43:45 2013] [info] [client 106.51.138.7] mod_wsgi (pid=14416, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/match.wsgi'., referer: http://dev.klp.org.in:8029/
+[Tue Mar 05 15:00:48 2013] [info] [client 106.51.138.7] mod_wsgi (pid=18877, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/match.wsgi'.
+[Tue Mar 05 15:04:18 2013] [info] [client 106.51.138.7] mod_wsgi (pid=18878, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/match.wsgi'., referer: http://dev.klp.org.in:8029/
+[Tue Mar 05 15:09:13 2013] [info] [client 106.51.138.7] mod_wsgi (pid=18878, process='', application=''): Reloading WSGI script '/home/brijesh/school_student_matching/match.wsgi'.
+[Tue Mar 05 15:21:21 2013] [info] [client 106.51.138.7] mod_wsgi (pid=23707, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/match.wsgi'.
+[Tue Mar 05 15:21:43 2013] [info] [client 106.51.138.7] mod_wsgi (pid=23706, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/match.wsgi'., referer: http://dev.klp.org.in:8029/
+[Fri Mar 08 12:02:13 2013] [info] [client 106.51.133.203] mod_wsgi (pid=25922, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/student_matching/match.wsgi'.
+[Fri Mar 08 12:02:13 2013] [error] [client 106.51.133.203] Traceback (most recent call last):
+[Fri Mar 08 12:02:13 2013] [error] [client 106.51.133.203]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 239, in process
+[Fri Mar 08 12:02:13 2013] [error] [client 106.51.133.203]     return self.handle()
+[Fri Mar 08 12:02:13 2013] [error] [client 106.51.133.203]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 230, in handle
+[Fri Mar 08 12:02:13 2013] [error] [client 106.51.133.203]     return self._delegate(fn, self.fvars, args)
+[Fri Mar 08 12:02:13 2013] [error] [client 106.51.133.203]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 420, in _delegate
+[Fri Mar 08 12:02:13 2013] [error] [client 106.51.133.203]     return handle_class(cls)
+[Fri Mar 08 12:02:13 2013] [error] [client 106.51.133.203]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 396, in handle_class
+[Fri Mar 08 12:02:13 2013] [error] [client 106.51.133.203]     return tocall(*args)
+[Fri Mar 08 12:02:13 2013] [error] [client 106.51.133.203]   File "/home/brijesh/school_student_matching/student_matching/match.wsgi", line 37, in GET
+[Fri Mar 08 12:02:13 2013] [error] [client 106.51.133.203]     fp=csv.reader(open('/home/brijesh/school_student_matching/student_matching/sikshanaschools.csv','r'),delimiter='|')
+[Fri Mar 08 12:02:13 2013] [error] [client 106.51.133.203] IOError: [Errno 2] No such file or directory: '/home/brijesh/school_student_matching/student_matching/sikshanaschools.csv'
+[Fri Mar 08 12:02:13 2013] [error] [client 106.51.133.203] 
+[Fri Mar 08 12:02:14 2013] [info] [client 106.51.133.203] mod_wsgi (pid=25923, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/student_matching/match.wsgi'.
+[Mon Mar 11 12:23:44 2013] [info] [client 106.51.176.30] mod_wsgi (pid=27259, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/student_matching/match.wsgi'.
+[Mon Mar 11 12:23:44 2013] [error] [client 106.51.176.30] Traceback (most recent call last):
+[Mon Mar 11 12:23:44 2013] [error] [client 106.51.176.30]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 239, in process
+[Mon Mar 11 12:23:44 2013] [error] [client 106.51.176.30]     return self.handle()
+[Mon Mar 11 12:23:44 2013] [error] [client 106.51.176.30]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 230, in handle
+[Mon Mar 11 12:23:44 2013] [error] [client 106.51.176.30]     return self._delegate(fn, self.fvars, args)
+[Mon Mar 11 12:23:44 2013] [error] [client 106.51.176.30]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 420, in _delegate
+[Mon Mar 11 12:23:44 2013] [error] [client 106.51.176.30]     return handle_class(cls)
+[Mon Mar 11 12:23:44 2013] [error] [client 106.51.176.30]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 396, in handle_class
+[Mon Mar 11 12:23:44 2013] [error] [client 106.51.176.30]     return tocall(*args)
+[Mon Mar 11 12:23:44 2013] [error] [client 106.51.176.30]   File "/home/brijesh/school_student_matching/student_matching/match.wsgi", line 37, in GET
+[Mon Mar 11 12:23:44 2013] [error] [client 106.51.176.30]     fp=csv.reader(open('/home/brijesh/school_student_matching/student_matching/sikshanaschools.csv','r'),delimiter='|')
+[Mon Mar 11 12:23:44 2013] [error] [client 106.51.176.30] IOError: [Errno 2] No such file or directory: '/home/brijesh/school_student_matching/student_matching/sikshanaschools.csv'
+[Mon Mar 11 12:23:44 2013] [error] [client 106.51.176.30] 
+[Mon Mar 11 12:23:45 2013] [info] [client 106.51.176.30] mod_wsgi (pid=27258, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/student_matching/match.wsgi'.
+[Mon Mar 11 16:57:31 2013] [info] [client 106.51.176.30] mod_wsgi (pid=25287, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/student_matching/match.wsgi'.
+[Mon Mar 11 16:57:31 2013] [error] [client 106.51.176.30] Traceback (most recent call last):
+[Mon Mar 11 16:57:31 2013] [error] [client 106.51.176.30]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 239, in process
+[Mon Mar 11 16:57:31 2013] [error] [client 106.51.176.30]     return self.handle()
+[Mon Mar 11 16:57:31 2013] [error] [client 106.51.176.30]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 230, in handle
+[Mon Mar 11 16:57:31 2013] [error] [client 106.51.176.30]     return self._delegate(fn, self.fvars, args)
+[Mon Mar 11 16:57:31 2013] [error] [client 106.51.176.30]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 420, in _delegate
+[Mon Mar 11 16:57:31 2013] [error] [client 106.51.176.30]     return handle_class(cls)
+[Mon Mar 11 16:57:31 2013] [error] [client 106.51.176.30]   File "/usr/lib/python2.7/dist-packages/web/application.py", line 396, in handle_class
+[Mon Mar 11 16:57:31 2013] [error] [client 106.51.176.30]     return tocall(*args)
+[Mon Mar 11 16:57:31 2013] [error] [client 106.51.176.30]   File "/home/brijesh/school_student_matching/student_matching/match.wsgi", line 37, in GET
+[Mon Mar 11 16:57:31 2013] [error] [client 106.51.176.30]     fp=csv.reader(open('/home/brijesh/school_student_matching/student_matching/sikshanaschools.csv','r'),delimiter='|')
+[Mon Mar 11 16:57:31 2013] [error] [client 106.51.176.30] IOError: [Errno 2] No such file or directory: '/home/brijesh/school_student_matching/student_matching/sikshanaschools.csv'
+[Mon Mar 11 16:57:31 2013] [error] [client 106.51.176.30] 
+>>>>>>> 9efe44e78bbd31c8f1ca67d77f3ea0bf77c758d9
