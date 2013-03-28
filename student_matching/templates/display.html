@@ -1,0 +1,52 @@
+$def with (dstudents,cstudents)
+
+<html>
+<head>
+<script type="text/javascript" src="/js/match.js">
+</script>
+</head>
+
+<body>
+
+<form id="form1" name="form1" method="post" action="/go">
+
+<input type="hidden" id="csv_value" name="csv_value"/><input type="hidden" id="db_value" name="db_value"/><input type="hidden" id="box" name="box">
+Filter by Student Name: <input type="text" onkeyup="filter(this.value);">  <input type="button" value="Match Found" onclick="myfunction();">
+<br><br>
+
+<div align="left" style="height: 100%; overflow: auto; width: 50%; float:left;">
+<table align="left" width="100%" style="background-color:#000000" border="1" cellspacing="0" cellpadding="0">
+<tr><td><h3><font color="white">Sikshana Data</font></h3></td></tr>
+</table>
+<br>
+<table id="ssdata" name="ssdata" align="left" width=100% style="font-size:12;" border="1" cellpadding="5" cellspacing="0">
+<thead>
+<tr><td>Student_code</td><td>Student_name</td></tr>
+</thead>
+<tbody> 
+$for student in cstudents:
+	<tr onclick="clicks(this,1);"><td>$student[4]</td><td>$student[3]</td></tr>
+
+</tbody>
+</table>
+</div>
+
+<div align="right" style="height: 100%; width: 50%; float:right;">
+<table align="center" width="100%" style="background-color:#000000;" border="1" cellspacing="0" cellpadding="0">
+<tr><td><h3><font color="white">Klp Database</font></h3></td></tr>
+</table>
+
+<table id="sedata" name="sedata" align="right" width=100% style="font-size:12;" border="1" cellpadding="5" cellspacing="0">
+<thead>
+<tr><td>Student_code</td><td>Student_name</td></tr>
+</thead>
+<tbody>
+$for student in dstudents:
+	<tr onclick="clicks(this,2);"><td>$student.student_id</td><td>$student.first_name</td></tr>
+</tbody>
+</table>
+</div>
+
+</form>
+</body>
+</html>

@@ -1,0 +1,53 @@
+$def with (schools,klp_schools)
+
+<html>
+<head>
+<script type="text/javascript" src="/js/match.js">
+</script>
+</head>
+
+<body>
+
+<form id="form1" name="form1" method="post" action="/go">
+
+<input type="hidden" id="db_value" name="db_value"/><input type="hidden" id="csv_value" name="csv_value"/><input type="hidden" id="clst" name="clst">
+
+<input type="button" value="Match Found" onclick="myfunction();">
+<br><br>
+
+<div align="left" style="height: 100%; overflow: auto; width: 50%; float:left;">
+<table align="left" width="100%" style="background-color:#000000" border="1" cellspacing="0" cellpadding="0">
+<tr><td><h3><font color="white">Klp Database</font></h3></td></tr>
+</table>
+<br>
+<table id="ssdata" name="ssdata" align="left" width=100% style="font-size:12;" border="1" cellpadding="5" cellspacing="0">
+<thead>
+<tr><td>School_code</td><td>School_name</td></tr>
+</thead>
+<tbody> 
+$for dschool in schools:
+	<tr onclick="clicks(this,1);"><td>$dschool.school_code</td><td>$dschool.school_name</td></tr>
+
+</tbody>
+</table>
+</div>
+
+<div align="right" style="height: 100%; width: 50%; float:right;">
+<table align="center" width="100%" style="background-color:#000000;" border="1" cellspacing="0" cellpadding="0">
+<tr><td><h3><font color="white">Csv Data</font></h3></td></tr>
+</table>
+
+<table id="sedata" name="sedata" align="right" width=100% style="font-size:12;" border="1" cellpadding="5" cellspacing="0">
+<thead>
+<tr><td>School_code</td><td>School_name</td></tr>
+</thead>
+<tbody>
+$for cschool in klp_schools:
+	<tr onclick="clicks(this,2);"><td>$cschool[3]</td><td>$cschool[4]</td></tr>
+</tbody>
+</table>
+</div>
+
+</form>
+</body>
+</html>
