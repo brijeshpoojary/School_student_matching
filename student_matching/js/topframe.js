@@ -28,11 +28,7 @@ function change_focus(id,type,flag)
 			if(flag==1)
 				element.options[element.length]=new Option(data[i][2],data[i][1]);
 			else{
-<<<<<<< HEAD
 				element.options[element.length]=new Option(data[i][2],data[i][1]);
-=======
-				element.options[element.length]=new Option(data[i][1],data[i][1]);
->>>>>>> 133d34e54fe438bc9bdc47039b5808632f530159
 			}
 		}
 	}

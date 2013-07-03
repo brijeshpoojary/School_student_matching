@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 $def with (klp_students,sikshana_students)
-=======
-$def with (dstudents,cstudents)
->>>>>>> 133d34e54fe438bc9bdc47039b5808632f530159
 
 <html>
 <head>
@@ -12,7 +8,6 @@ $def with (dstudents,cstudents)
 
 <body>
 
-<<<<<<< HEAD
 <form id="form1" name="form1" method="post" action="/match">
 
 <input type="hidden" id="sikshana_value" name="sikshana_value"/><input type="hidden" id="klp_value" name="klp_value"/><input type="hidden" id="matched_value" name="matched_value">
@@ -31,26 +26,6 @@ Filter by Student Name: <input type="text" onkeyup="filter(this.value);">  <inpu
 <tbody> 
 $for student in sikshana_students:
 	<tr onclick="clicks(this,1);"><td>$student[0]</td><td>$student[1]</td></tr>
-=======
-<form id="form1" name="form1" method="post" action="/go">
-
-<input type="hidden" id="csv_value" name="csv_value"/><input type="hidden" id="db_value" name="db_value"/><input type="hidden" id="box" name="box">
-Filter by Student Name: <input type="text" onkeyup="filter(this.value);">  <input type="button" value="Match Found" onclick="myfunction();">
-<br><br>
-
-<div align="left" style="height: 100%; overflow: auto; width: 50%; float:left;">
-<table align="left" width="100%" style="background-color:#000000" border="1" cellspacing="0" cellpadding="0">
-<tr><td><h3><font color="white">Sikshana Data</font></h3></td></tr>
-</table>
-<br>
-<table id="ssdata" name="ssdata" align="left" width=100% style="font-size:12;" border="1" cellpadding="5" cellspacing="0">
-<thead>
-<tr><td>Student_code</td><td>Student_name</td></tr>
-</thead>
-<tbody> 
-$for student in cstudents:
-	<tr onclick="clicks(this,1);"><td>$student[4]</td><td>$student[3]</td></tr>
->>>>>>> 133d34e54fe438bc9bdc47039b5808632f530159
 
 </tbody>
 </table>
@@ -61,7 +36,6 @@ $for student in cstudents:
 <tr><td><h3><font color="white">Klp Database</font></h3></td></tr>
 </table>
 
-<<<<<<< HEAD
 <table id="klp_table" name="klp_table" align="right" width=100% style="font-size:12;" border="1" cellpadding="5" cellspacing="0">
 <thead>
 <tr><td>Student code</td><td>First name</td><td>Last name</td></tr>
@@ -69,15 +43,6 @@ $for student in cstudents:
 <tbody>
 $for student in klp_students:
 	<tr onclick="clicks(this,2);"><td>$student[0]</td><td>$student[1]</td><td>$student[3]</td></tr>
-=======
-<table id="sedata" name="sedata" align="right" width=100% style="font-size:12;" border="1" cellpadding="5" cellspacing="0">
-<thead>
-<tr><td>Student_code</td><td>Student_name</td></tr>
-</thead>
-<tbody>
-$for student in dstudents:
-	<tr onclick="clicks(this,2);"><td>$student.student_id</td><td>$student.first_name</td></tr>
->>>>>>> 133d34e54fe438bc9bdc47039b5808632f530159
 </tbody>
 </table>
 </div>
