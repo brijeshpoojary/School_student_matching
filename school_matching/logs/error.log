@@ -86,3 +86,124 @@
 [Wed Mar 13 15:47:54 2013] [info] [client 106.51.160.128] mod_wsgi (pid=23040, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/school_matching/match.wsgi'.
 [Wed Mar 13 15:51:03 2013] [info] [client 122.167.126.34] mod_wsgi (pid=23040, process='', application=''): Reloading WSGI script '/home/brijesh/school_student_matching/school_matching/match.wsgi'.
 [Wed Mar 13 15:53:48 2013] [info] [client 122.167.126.34] mod_wsgi (pid=23039, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/school_matching/match.wsgi'., referer: http://dev.klp.org.in:8029/topframe
+[Thu Mar 14 15:38:20 2013] [info] [client 106.51.186.196] mod_wsgi (pid=27509, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/school_matching/match.wsgi'.
+[Thu Mar 14 15:45:26 2013] [info] [client 106.51.186.196] mod_wsgi (pid=12212, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/school_matching/match.wsgi'.
+[Thu Mar 14 16:10:38 2013] [info] [client 106.51.186.196] mod_wsgi (pid=16753, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/school_matching/match.wsgi'.
+[Thu Mar 14 17:45:45 2013] [info] [client 106.51.186.196] mod_wsgi (pid=3295, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/school_matching/match.wsgi'.
+[Fri Mar 15 12:59:34 2013] [info] [client 106.51.160.140] mod_wsgi (pid=3474, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/school_matching/match.wsgi'.
+[Fri Mar 15 13:07:55 2013] [info] [client 106.51.160.140] mod_wsgi (pid=3475, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/school_matching/match.wsgi'., referer: http://dev.klp.org.in:8029/topframe
+[Mon Mar 18 14:52:49 2013] [info] [client 106.51.181.101] mod_wsgi (pid=3000, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/school_matching/match.wsgi'.
+[Thu Mar 21 14:24:02 2013] [info] [client 106.51.161.96] mod_wsgi (pid=26581, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/school_matching/match.wsgi'.
+[Tue Apr 09 12:23:52 2013] [info] [client 106.51.187.118] mod_wsgi (pid=14521, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/school_matching/match.wsgi'.
+[Wed Apr 10 11:55:29 2013] [info] [client 106.51.155.240] mod_wsgi (pid=17252, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/school_matching/match.wsgi'.
+[Mon Apr 15 10:59:25 2013] [info] [client 106.51.162.219] mod_wsgi (pid=17251, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/school_matching/match.wsgi'.
+[Mon May 20 12:16:13 2013] [info] [client 106.51.156.171] mod_wsgi (pid=9285, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/school_matching/match.wsgi'.
+[Tue Jun 04 11:02:09 2013] [info] [client 106.51.158.183] mod_wsgi (pid=6221, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/school_matching/match.wsgi'.
+[Tue Jun 04 14:39:42 2013] [info] [client 106.51.159.43] mod_wsgi (pid=6222, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/school_matching/match.wsgi'.
+[Fri Jun 14 12:50:27 2013] [info] [client 122.166.124.73] mod_wsgi (pid=4082, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/school_matching/match.wsgi'.
+[Tue Jul 02 20:39:02 2013] [info] [client 127.0.0.1] mod_wsgi (pid=2631, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/school_matching/match.wsgi'.
+[Tue Jul 02 20:39:03 2013] [error] [client 127.0.0.1] Traceback (most recent call last):, referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:39:03 2013] [error] [client 127.0.0.1]   File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 239, in process, referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:39:03 2013] [error] [client 127.0.0.1]     return self.handle(), referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:39:03 2013] [error] [client 127.0.0.1]   File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 230, in handle, referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:39:03 2013] [error] [client 127.0.0.1]     return self._delegate(fn, self.fvars, args), referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:39:03 2013] [error] [client 127.0.0.1]   File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 462, in _delegate, referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:39:03 2013] [error] [client 127.0.0.1]     return handle_class(cls), referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:39:03 2013] [error] [client 127.0.0.1]   File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 438, in handle_class, referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:39:03 2013] [error] [client 127.0.0.1]     return tocall(*args), referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:39:03 2013] [error] [client 127.0.0.1]   File "/home/brijesh/school_student_matching/school_matching/match.wsgi", line 42, in GET, referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:39:03 2013] [error] [client 127.0.0.1]     district_query = db2.query('select distinct cast(b3.id as text),b3.name from vw_institution s, vw_boundary b1, vw_boundary b2,vw_boundary b3 where s.boundary_id = b1.id and b1.parent_id=b2.id and b2.parent_id=b3.id and b3.parent_id=1 and b3.boundary_type_id=1 order by b3.name'), referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:39:03 2013] [error] [client 127.0.0.1]   File "/usr/local/lib/python2.7/dist-packages/web/db.py", line 644, in query, referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:39:03 2013] [error] [client 127.0.0.1]     self._db_execute(db_cursor, sql_query), referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:39:03 2013] [error] [client 127.0.0.1]   File "/usr/local/lib/python2.7/dist-packages/web/db.py", line 587, in _db_execute, referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:39:03 2013] [error] [client 127.0.0.1]     out = cur.execute(query, params), referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:39:03 2013] [error] [client 127.0.0.1] DatabaseError: could not establish connection, referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:39:03 2013] [error] [client 127.0.0.1] DETAIL:  FATAL:  database "klp_master" does not exist, referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:39:03 2013] [error] [client 127.0.0.1] , referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:39:03 2013] [error] [client 127.0.0.1] , referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:39:03 2013] [error] [client 127.0.0.1] , referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:39:03 2013] [info] [client 127.0.0.1] mod_wsgi (pid=2632, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/school_matching/match.wsgi'.
+[Tue Jul 02 20:44:23 2013] [info] [client 127.0.0.1] mod_wsgi (pid=2847, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/school_matching/match.wsgi'.
+[Tue Jul 02 20:44:23 2013] [error] [client 127.0.0.1] Traceback (most recent call last):, referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:23 2013] [error] [client 127.0.0.1]   File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 239, in process, referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:23 2013] [error] [client 127.0.0.1]     return self.handle(), referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:23 2013] [error] [client 127.0.0.1]   File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 230, in handle, referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:23 2013] [error] [client 127.0.0.1]     return self._delegate(fn, self.fvars, args), referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:23 2013] [error] [client 127.0.0.1]   File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 462, in _delegate, referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:23 2013] [error] [client 127.0.0.1]     return handle_class(cls), referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:23 2013] [error] [client 127.0.0.1]   File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 438, in handle_class, referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:23 2013] [error] [client 127.0.0.1]     return tocall(*args), referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:23 2013] [error] [client 127.0.0.1]   File "/home/brijesh/school_student_matching/school_matching/match.wsgi", line 42, in GET, referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:23 2013] [error] [client 127.0.0.1]     district_query = db2.query('select distinct cast(b3.id as text),b3.name from vw_institution s, vw_boundary b1, vw_boundary b2,vw_boundary b3 where s.boundary_id = b1.id and b1.parent_id=b2.id and b2.parent_id=b3.id and b3.parent_id=1 and b3.boundary_type_id=1 order by b3.name'), referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:23 2013] [error] [client 127.0.0.1]   File "/usr/local/lib/python2.7/dist-packages/web/db.py", line 644, in query, referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:23 2013] [error] [client 127.0.0.1]     self._db_execute(db_cursor, sql_query), referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:23 2013] [error] [client 127.0.0.1]   File "/usr/local/lib/python2.7/dist-packages/web/db.py", line 587, in _db_execute, referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:23 2013] [error] [client 127.0.0.1]     out = cur.execute(query, params), referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:23 2013] [error] [client 127.0.0.1] DatabaseError: could not establish connection, referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:23 2013] [error] [client 127.0.0.1] DETAIL:  FATAL:  database "klp_master" does not exist, referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:23 2013] [error] [client 127.0.0.1] , referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:23 2013] [error] [client 127.0.0.1] , referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:23 2013] [error] [client 127.0.0.1] , referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:26 2013] [info] [client 127.0.0.1] mod_wsgi (pid=2846, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/school_matching/match.wsgi'.
+[Tue Jul 02 20:44:26 2013] [error] [client 127.0.0.1] Traceback (most recent call last):, referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:26 2013] [error] [client 127.0.0.1]   File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 239, in process, referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:26 2013] [error] [client 127.0.0.1]     return self.handle(), referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:26 2013] [error] [client 127.0.0.1]   File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 230, in handle, referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:26 2013] [error] [client 127.0.0.1]     return self._delegate(fn, self.fvars, args), referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:26 2013] [error] [client 127.0.0.1]   File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 462, in _delegate, referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:26 2013] [error] [client 127.0.0.1]     return handle_class(cls), referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:26 2013] [error] [client 127.0.0.1]   File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 438, in handle_class, referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:26 2013] [error] [client 127.0.0.1]     return tocall(*args), referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:26 2013] [error] [client 127.0.0.1]   File "/home/brijesh/school_student_matching/school_matching/match.wsgi", line 42, in GET, referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:26 2013] [error] [client 127.0.0.1]     district_query = db2.query('select distinct cast(b3.id as text),b3.name from vw_institution s, vw_boundary b1, vw_boundary b2,vw_boundary b3 where s.boundary_id = b1.id and b1.parent_id=b2.id and b2.parent_id=b3.id and b3.parent_id=1 and b3.boundary_type_id=1 order by b3.name'), referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:26 2013] [error] [client 127.0.0.1]   File "/usr/local/lib/python2.7/dist-packages/web/db.py", line 644, in query, referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:26 2013] [error] [client 127.0.0.1]     self._db_execute(db_cursor, sql_query), referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:26 2013] [error] [client 127.0.0.1]   File "/usr/local/lib/python2.7/dist-packages/web/db.py", line 587, in _db_execute, referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:26 2013] [error] [client 127.0.0.1]     out = cur.execute(query, params), referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:26 2013] [error] [client 127.0.0.1] DatabaseError: could not establish connection, referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:26 2013] [error] [client 127.0.0.1] DETAIL:  FATAL:  database "klp_master" does not exist, referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:26 2013] [error] [client 127.0.0.1] , referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:26 2013] [error] [client 127.0.0.1] , referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:26 2013] [error] [client 127.0.0.1] , referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:42 2013] [info] [client 127.0.0.1] mod_wsgi (pid=2950, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/school_matching/match.wsgi'.
+[Tue Jul 02 20:44:42 2013] [error] [client 127.0.0.1] Traceback (most recent call last):, referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:42 2013] [error] [client 127.0.0.1]   File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 239, in process, referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:42 2013] [error] [client 127.0.0.1]     return self.handle(), referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:42 2013] [error] [client 127.0.0.1]   File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 230, in handle, referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:42 2013] [error] [client 127.0.0.1]     return self._delegate(fn, self.fvars, args), referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:42 2013] [error] [client 127.0.0.1]   File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 462, in _delegate, referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:42 2013] [error] [client 127.0.0.1]     return handle_class(cls), referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:42 2013] [error] [client 127.0.0.1]   File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 438, in handle_class, referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:42 2013] [error] [client 127.0.0.1]     return tocall(*args), referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:42 2013] [error] [client 127.0.0.1]   File "/home/brijesh/school_student_matching/school_matching/match.wsgi", line 42, in GET, referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:42 2013] [error] [client 127.0.0.1]     district_query = db2.query('select distinct cast(b3.id as text),b3.name from vw_institution s, vw_boundary b1, vw_boundary b2,vw_boundary b3 where s.boundary_id = b1.id and b1.parent_id=b2.id and b2.parent_id=b3.id and b3.parent_id=1 and b3.boundary_type_id=1 order by b3.name'), referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:42 2013] [error] [client 127.0.0.1]   File "/usr/local/lib/python2.7/dist-packages/web/db.py", line 644, in query, referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:42 2013] [error] [client 127.0.0.1]     self._db_execute(db_cursor, sql_query), referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:42 2013] [error] [client 127.0.0.1]   File "/usr/local/lib/python2.7/dist-packages/web/db.py", line 587, in _db_execute, referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:42 2013] [error] [client 127.0.0.1]     out = cur.execute(query, params), referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:42 2013] [error] [client 127.0.0.1] DatabaseError: could not establish connection, referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:42 2013] [error] [client 127.0.0.1] DETAIL:  FATAL:  database "klp_master" does not exist, referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:42 2013] [error] [client 127.0.0.1] , referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:42 2013] [error] [client 127.0.0.1] , referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:44:42 2013] [error] [client 127.0.0.1] , referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:53:15 2013] [info] [client 127.0.0.1] mod_wsgi (pid=3169, process='', application=''): Loading WSGI script '/home/brijesh/school_student_matching/school_matching/match.wsgi'.
+[Tue Jul 02 20:53:16 2013] [error] [client 127.0.0.1] Traceback (most recent call last):, referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:53:16 2013] [error] [client 127.0.0.1]   File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 239, in process, referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:53:16 2013] [error] [client 127.0.0.1]     return self.handle(), referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:53:16 2013] [error] [client 127.0.0.1]   File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 230, in handle, referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:53:16 2013] [error] [client 127.0.0.1]     return self._delegate(fn, self.fvars, args), referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:53:16 2013] [error] [client 127.0.0.1]   File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 462, in _delegate, referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:53:16 2013] [error] [client 127.0.0.1]     return handle_class(cls), referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:53:16 2013] [error] [client 127.0.0.1]   File "/usr/local/lib/python2.7/dist-packages/web/application.py", line 438, in handle_class, referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:53:16 2013] [error] [client 127.0.0.1]     return tocall(*args), referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:53:16 2013] [error] [client 127.0.0.1]   File "/home/brijesh/school_student_matching/school_matching/match.wsgi", line 42, in GET, referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:53:16 2013] [error] [client 127.0.0.1]     district_query = db1.query('select distinct cast(b3.id as text),b3.name from vw_institution s, vw_boundary b1, vw_boundary b2,vw_boundary b3 where s.boundary_id = b1.id and b1.parent_id=b2.id and b2.parent_id=b3.id and b3.parent_id=1 and b3.boundary_type_id=1 order by b3.name'), referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:53:16 2013] [error] [client 127.0.0.1]   File "/usr/local/lib/python2.7/dist-packages/web/db.py", line 644, in query, referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:53:16 2013] [error] [client 127.0.0.1]     self._db_execute(db_cursor, sql_query), referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:53:16 2013] [error] [client 127.0.0.1]   File "/usr/local/lib/python2.7/dist-packages/web/db.py", line 587, in _db_execute, referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:53:16 2013] [error] [client 127.0.0.1]     out = cur.execute(query, params), referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:53:16 2013] [error] [client 127.0.0.1] DatabaseError: could not establish connection, referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:53:16 2013] [error] [client 127.0.0.1] DETAIL:  FATAL:  database "klp_master" does not exist, referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:53:16 2013] [error] [client 127.0.0.1] , referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:53:16 2013] [error] [client 127.0.0.1] , referer: http://0.0.0.0:8026/
+[Tue Jul 02 20:53:16 2013] [error] [client 127.0.0.1] , referer: http://0.0.0.0:8026/

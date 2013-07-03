@@ -1,9 +1,10 @@
 
 function callpage(value){
-	var klp=document.getElementById("klp_clst");
-	var sikshana=document.getElementById("sikshana_clst");
-
-	parent.content.location.href="content/"+trim(klp.value)+"/"+trim(sikshana.value);
+	var ac_id=document.getElementById("ac_year");
+	var sch=document.getElementById("school");
+	var cls=document.getElementById("cls");
+	
+	parent.content.location.href="content/"+trim(sch.value)+"/"+trim(cls.value)+"/"+trim(ac_id.value);
 
 }
 
@@ -11,21 +12,23 @@ function change_focus(id,type,flag)
 {
 	var data='';
 	var element=document.getElementById(type);
-	if(type=='klp_blk')
-		data=klp_blk;
-	else if(type=='klp_clst')
-		data=klp_clst;
-	else if(type=='sikshana_blk')
-		data=sikshana_blk;
-	else if(type=='sikshana_clst')
-		data=sikshana_clst;
+	if(type=='blk')
+		data=block;
+	else if(type=='clust')
+		data=cluster;
+	else if(type=='school')
+		data=school;
+	else if(type=='cls')
+		data=cls;
+	else if(type=='ac_year')
+		data=ac_year;
 	element.length=1;
 	for(var i=0;i<data.length-1;i++){
 		if(trim(data[i][0])==trim(id)){
 			if(flag==1)
 				element.options[element.length]=new Option(data[i][2],data[i][1]);
 			else{
-				element.options[element.length]=new Option(data[i][1],data[i][1]);
+				element.options[element.length]=new Option(data[i][2],data[i][1]);
 			}
 		}
 	}

@@ -5,8 +5,8 @@ function replaceAll(txt, replace, with_this) {
 
 function filter(value){
 	
-  	var klptable = document.getElementById("ssdata");
-	var csvtable = document.getElementById("sedata");
+  	var klptable = document.getElementById("klp_table");
+	var sikshanatable = document.getElementById("sikshana_table");
 	var school;
 	
 	
@@ -21,26 +21,26 @@ function filter(value){
 		}
 	}
 
-	for(var i=1;i<csvtable.rows.length;i++){
-		school=csvtable.rows[i].innerHTML.replace(/<[^>]+>/g,"|").split("|")[3];
+	for(var i=1;i<sikshanatable.rows.length;i++){
+		school=sikshanatable.rows[i].innerHTML.replace(/<[^>]+>/g,"|").split("|")[3];
 		res=school.toLowerCase().match(value.toLowerCase());
 		if(res==value.toLowerCase()){
-			csvtable.rows[i].style.display='';
+			sikshanatable.rows[i].style.display='';
 		}
 		else{
-			csvtable.rows[i].style.display='none';
+			sikshanatable.rows[i].style.display='none';
 		}
 	}
 }
 
 function clicks(value,type){
 	if(type==1){
-		var table=document.getElementById('ssdata');
+		var table=document.getElementById('klp_table');
 		for(var i=0;i<=table.rows.length-1;i++){
 			table.rows[i].bgColor='#FFFFFF';
 		}	
 	} else {
-		table=document.getElementById('sedata');
+		table=document.getElementById('sikshana_table');
 		for(var i=0;i<=table.rows.length-1;i++){
 			table.rows[i].bgColor='#FFFFFF';
 		}
@@ -48,13 +48,13 @@ function clicks(value,type){
 	if(value.bgColor=='#FFD700'){
 	 	value.bgColor='#FFFFFF';
 		if(type==1){
-			var sslc=document.getElementById('db_value');
-			sslc.value='';
+			var klp=document.getElementById('klp_value');
+			klp.value='';
 		
 		}
 		else{
-			var semis=document.getElementById('csv_value');
-			semis.value='';
+			var sikshana=document.getElementById('sikshana_value');
+			sikshana.value='';
 		
 		}	
 	
@@ -65,22 +65,22 @@ function clicks(value,type){
 		if(type==1){
 			
 			
-			var sslc=document.getElementById('db_value');
+			var klp=document.getElementById('klp_value');
 			value_list= replaceAll(value.innerHTML,"<td>","");
 			value_list= replaceAll(value_list,"</td>","|");
 			value_list= value_list.substring(0,value_list.length-2);
                         //alert(value_list);
 			value_list= value_list.split("|");
-			sslc.value=value_list.join("|");
+			klp.value=value_list.join("|");
 		}
 		else{
-			var semis=document.getElementById('csv_value');
+			var sikshana=document.getElementById('sikshana_value');
 			value_list= replaceAll(value.innerHTML,"<td>","");
 			value_list= replaceAll(value_list,"</td>","|");
 			value_list= value_list.substring(0,value_list.length-2);
                         //alert(value_list);
 			value_list= value_list.split("|");
-			semis.value=value_list.join("|");
+			sikshana.value=value_list.join("|");
 		}
 	}
 }
@@ -88,16 +88,16 @@ function clicks(value,type){
 function myfunction()
 {
 	var x;
-	var r=confirm("Sure you want to continue..??");
+	var y=document.getElementById("sikshana_value").value.split("|");
+	var z=document.getElementById("klp_value").value.split("|");	
+	var r=confirm("Sure to match "+y[1].trim()+" and "+z[1]+" ?");
 	if (r==true)
   	{
-		var clst=document.URL.split("/");
-		document.getElementById("clst").value=clst[clst.length-2]+"|"+clst[clst.length-1];
-		document.forms["form1"].submit();
-		
+		var data=document.URL.split("/");
+		document.getElementById("matched_value").value=data[data.length-2]+"|"+data[data.length-1];
+		document.forms["form1"].submit();		
  	 }
 	else
 	{
-		alert('hi');
 	}
 }

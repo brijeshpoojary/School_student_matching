@@ -15,17 +15,17 @@ os.chdir(abspath)
 
 render = web.template.render('templates/')
 
-db1=web.database(dbn='postgres',user='klp',pw='hello',db='semis')
-db2=web.database(dbn='postgres',user='klp',pw='azsxdcfv',db='sikshana')
+db1=web.database(dbn='postgres',user='postgres',pw='hello',db='sikshana')
+db2=web.database(dbn='postgres',user='klp',pw='chang3d1t',db='sikshana')
 
 urls = (
 	'/', 'index',
-	'/go','result',
+	'/match','result',
 	'/topframe','topframe',
         '/content/(.*)/(.*)','content'
 )
 
-values={"dist":""}
+
 queryvalues={"klpcode":"","klpname":"","schoolcode":"","schoolname":"","district":"","block":"","cluster":""}
 
 
@@ -44,61 +44,26 @@ class topframe:
 		block_query = db2.query('select distinct cast(b2.id as text),b2.name,b2.parent_id from vw_institution s, vw_boundary b1, vw_boundary b2,vw_boundary b3 where s.boundary_id = b1.id and b1.parent_id=b2.id and b2.parent_id=b3.id and b3.parent_id=1 and b3.boundary_type_id=1 order by b2.name')
 
 		cluster_query = db2.query('select distinct cast(b1.id as text),b1.name,b1.parent_id from vw_institution s, vw_boundary b1, vw_boundary b2,vw_boundary b3 where s.boundary_id = b1.id and b1.parent_id=b2.id and b2.parent_id=b3.id and b3.parent_id=1 and b3.boundary_type_id=1 order by b1.name')
-		fp=csv.reader(open('/home/brijesh/school_student_matching/school_matching/data/sikshanaschools.csv','r'),delimiter='|')
-		fp.next()
-		district=[]
-		block=[]
-		cluster=[]
-		schools=[row for row in fp]
-		for row in schools:
-			if row[0] not in district:
-				district.append(row[0])
-		for row in schools:
-			if [row[0],row[1]] not in block:
-				block.append([row[0],row[1]])
-		for row in schools:
-			if [row[1],row[2]] not in cluster:
-				cluster.append([row[1],row[2]])
+		
+		sikshana_district = db2.query('select distinct district from tb_sikshana_school_data order by district')
 
-		return render.topframe(district_query,block_query,cluster_query,district,block,cluster)
+		sikshana_block = db2.query('select distinct district,block from tb_sikshana_school_data order by district,block') 
+
+		sikshana_cluster = db2.query('select distinct block,cluster from tb_sikshana_school_data order by block,cluster')
+
+		return render.topframe(district_query,block_query,cluster_query,sikshana_district,sikshana_block,sikshana_cluster)
 
 class content:
-	def GET(SELF,dbid,csvid):
-		dschools=db2.query('select cast(s.id as text) as school_code,s.name as school_name from vw_institution s, vw_boundary b1, vw_boundary b2,vw_boundary b3 where s.boundary_id = b1.id and s.active=2 and b1.parent_id=b2.id and b2.parent_id=b3.id and b3.boundary_type_id=1 and b3.boundary_category_id=9 and s.id not in (select distinct klp_id from school_match_found) and cast(b1.id as text)=''$name'' order by s.name',{"name":dbid})
-		fp=csv.reader(open('/home/brijesh/school_student_matching/school_matching/data/sikshanaschools.csv','r'),delimiter='|')
-		fp.next()
-		school_ids=db2.query('select distinct cast(school_code as text) from school_match_found')
-		school_ids=[row.school_code for row in school_ids]
-		cschools=[row for row in fp if row[2].strip().upper() == csvid.strip().upper() and row[3].strip() not in school_ids]
-		return render.content(dschools,cschools)
+	def GET(SELF,klp_cluster_id,sikshana_cluster_id):
 
-
-"""class index:
-	def GET(SELF):
-			#dists,blcks,clsts,schls=[],[],[],[]
-			fp=csv.reader(open('/home/brijesh/school_student_matching/school_matching/sikshanaschools.csv','r'),delimiter='|')
-			fp.next()
-			district_query = db2.query('select distinct cast(b3.id as text),b3.name from schools_institution s, schools_boundary b1, schools_boundary b2,schools_boundary b3 where s.boundary_id = b1.id and b1.parent_id=b2.id and b2.parent_id=b3.id and b3.parent_id=1 and b3.boundary_type_id=1')
-
-			block_query = db2.query('select distinct cast(b2.id as text),b2.name,b2.parent_id from schools_institution s, schools_boundary b1, schools_boundary b2,schools_boundary b3 where s.boundary_id = b1.id and b1.parent_id=b2.id and b2.parent_id=b3.id and b3.parent_id=1 and b3.boundary_type_id=1')
-
-                        cluster_query = db2.query('select distinct cast(b1.id as text),b1.name,b1.parent_id from schools_institution s, schools_boundary b1, schools_boundary b2,schools_boundary b3 where s.boundary_id = b1.id and b1.parent_id=b2.id and b2.parent_id=b3.id and b3.parent_id=1 and b3.boundary_type_id=1')
-
-			cluster=[]
-			cluster_name=''
-			school_ids=db2.query('select distinct cast(school_code as text) from school_match_found')
-			school_ids=[row.school_code for row in school_ids]
-			
-			for row in cluster_query:
-				cluster.append([row.id,row.name])
-			for row in cluster:
-				if row[0]==values['dist']:
-					cluster_name=row[1]
-			
-			schools=[row for row in fp if row[2].strip().upper() == cluster_name.strip().upper() and row[3].strip() not in school_ids]
-			klp_schools = db2.query('select cast(s.id as text) as school_code,s.name as school_name,b3.name as district,b2.name as block,b1.name as cluster from schools_institution s, schools_boundary b1, schools_boundary b2,schools_boundary b3 where s.boundary_id = b1.id and b1.parent_id=b2.id and b2.parent_id=b3.id and b3.boundary_type_id=1 and b3.boundary_category_id=9 and s.id not in (select distinct klp_id from school_match_found) and cast(b1.id as text)=''$dist'' order by s.name,b2.name',values)	
-			return render.compare(district_query,values,schools,klp_schools,block_query,cluster_query)"""
-				
+		klp_school = db2.query('select cast(s.id as text) as school_code,s.name as school_name from vw_institution s, vw_boundary b1, vw_boundary b2,vw_boundary b3 where s.boundary_id = b1.id and s.active=2 and b1.parent_id=b2.id and b2.parent_id=b3.id and b3.boundary_type_id=1 and b3.boundary_category_id=9 and s.id not in (select distinct klp_id from school_match_found) and cast(b1.id as text)=''$name'' order by s.name',{"name":klp_cluster_id})
+	
+		sik_school = db2.query('select distinct school_code,school_name,cluster,block,district from tb_sikshana_school_data a,school_match_found b where a.school_code != b.school_code order by school_code,school_name')
+		
+		klp_schools=[[row.school_code,row.school_name] for row in klp_school]
+		sik_schools=[[row.school_code,row.school_name] for row in sik_school if row[2].strip().upper() == sikshana_cluster_id.strip().upper()]
+	
+		return render.content(klp_schools,sik_schools)
 
 application = web.application(urls,globals()).wsgifunc()
 
@@ -106,13 +71,13 @@ application = web.application(urls,globals()).wsgifunc()
 class result:
     def POST(self):
 	inputs=web.input()
-	global values
-	if str(inputs.db_value)!='' and str(inputs.csv_value)!='':
-		queryvalues["klpcode"]=str(inputs.db_value).split("|")[0]
-		queryvalues["klpname"]=str(inputs.db_value).split("|")[1]
-		queryvalues["schoolcode"]=str(inputs.csv_value).split("|")[0]
-		queryvalues["schoolname"]=str(inputs.csv_value).split("|")[1]
+
+	if str(inputs.klp_value)!='' and str(inputs.sikshana_value)!='':
+		queryvalues["klpcode"]=str(inputs.klp_value).split("|")[0]
+		queryvalues["klpname"]=str(inputs.klp_value).split("|")[1]
+		queryvalues["schoolcode"]=str(inputs.sikshana_value).split("|")[0]
+		queryvalues["schoolname"]=str(inputs.sikshana_value).split("|")[1]
 		
 		db2.query('insert into school_match_found values($klpcode,$klpname,$schoolcode,$schoolname)',queryvalues)
 	
-        raise web.seeother('/content/'+str(inputs.clst).split("|")[0]+'/'+str(inputs.clst).split("|")[1])
+        raise web.seeother('/content/'+str(inputs.matched_value).split("|")[0]+'/'+str(inputs.matched_value).split("|")[1])
